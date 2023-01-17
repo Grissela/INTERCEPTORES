@@ -14,7 +14,7 @@ export class InterceptoresService implements HttpInterceptor{
     console.log('interceptado');
     
     const newReq = req.clone({setHeaders:{
-      Authorization: 'Bearer 01010101010101'
+      Authorization: 'Head 001'/** CABECERA */
     }})
 
     return next.handle(newReq);
