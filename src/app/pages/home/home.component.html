@@ -1,0 +1,8 @@
+<h1>{{titulo}}</h1>
+<button type="button" (click)="mostrar()">Mostrar</button>
+<ul *ngFor="let data of arrayusers">
+    <!-- <li>{{data | json}}</li> -->
+
+    <li>{{data.name}}</li>
+</ul>
+
